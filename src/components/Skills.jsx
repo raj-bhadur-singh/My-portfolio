@@ -24,12 +24,12 @@ const Skills = () => {
 
         // Database
         { icon: <SiMongodb size={40} color="#47A248" />, name: "MongoDB" },
-        { icon: <FaDatabase size={40} color="#4DB33D" />, name: "SQL" },
+        // { icon: <FaDatabase size={40} color="#4DB33D" />, name: "SQL" },
 
         // Other Languages / Backend Tech
-        { icon: <FaJava size={40} color="#d65509" />, name: "Java" },
-        { icon: <SiSpringboot size={40} color="#6DB33F" />, name: "Spring Boot" },
-        { icon: <FaPython size={40} color="#3472A6" />, name: "Python" },
+        // { icon: <FaJava size={40} color="#d65509" />, name: "Java" },
+        // { icon: <SiSpringboot size={40} color="#6DB33F" />, name: "Spring Boot" },
+        // { icon: <FaPython size={40} color="#3472A6" />, name: "Python" },
     ];
 
     // const skills = [

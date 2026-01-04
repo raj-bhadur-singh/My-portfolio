@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section
       id="home"
-      className="min-h-screen bg-gradient-to-br from-black via-[#0d0d2b] to-[#1b0f2e] text-white flex flex-col items-center justify-center px-4 xss:px-6 pt-32 pb-12"
+      className="bg-gradient-to-br from-black via-[#0d0d2b] to-[#1b0f2e] text-white flex flex-col items-center justify-center px-4 xss:px-6 pt-32 pb-12"
     >
       <div className="max-w-[95%] w-full flex flex-col lg:flex-row gap-12 items-center justify-between lg:py-0 pb-12">
         {/* Lottie Animation */}
@@ -74,7 +74,7 @@ const LandingPage = () => {
               <div className="flex  xs:flex-row xs:gap-8 gap-4 items-center justify-start xs:justify-center lg:justify-start">
                 {/* Download CV Button */}
                 <a
-                  href="https://drive.google.com/file/d/1wXVJXb16ZcEhYdci_EUJ-mnK2UwooaDj/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1IAyghirTSOJ9sR94EOGrd2bXoQK1_H83/view?usp=drive_link"
                   target="_blank"
                   download
                   className="inline-flex items-center gap-2 bg-lime-400 hover:bg-lime-500 text-black font-semibold xs:py-3 py-2 xs:px-6 px-4 rounded-full shadow-lg transition-all"

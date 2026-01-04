@@ -54,13 +54,13 @@ const AboutMe = () => {
           >
             <div>
               <h3 className="text-4xl font-extrabold text-white">
-                <CountUp end={1} duration={2} enableScrollSpy scrollSpyDelay={500} />+
+                <CountUp end={2} duration={2} enableScrollSpy scrollSpyDelay={500} />+
               </h3>
               <p className="mt-2 text-sm uppercase text-gray-500 tracking-wide">Years of Experience</p>
             </div>
             <div>
               <h3 className="text-4xl font-extrabold text-white">
-                <CountUp end={10} duration={2} enableScrollSpy scrollSpyDelay={500} />+
+                <CountUp end={6} duration={2} enableScrollSpy scrollSpyDelay={500} />+
               </h3>
               <p className="mt-2 text-sm uppercase text-gray-500 tracking-wide">Complete Projects</p>
             </div>

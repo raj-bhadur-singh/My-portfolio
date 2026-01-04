@@ -23,3 +23,19 @@ body {
 .animate-slide-in-right {
   animation: slide-in-right 0.3s ease-out forwards;
 }
+
+/* Slide-in animation from right to center */
+@keyframes slide-in-center {
+  0% {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-center {
+  animation: slide-in-center 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
