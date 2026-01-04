@@ -4,6 +4,7 @@ import ProjectGallery from '../components/ProjectGallery'
 import Skills from '../components/Skills'
 import { useLocation } from 'react-router-dom'
 import SkillsSection from '../components/SkillsSection'
+import ClientProjects from '../components/ClientProjects'
 
 const HomePage = () => {
     const location = useLocation();
@@ -30,6 +31,7 @@ const HomePage = () => {
             <section id="projects">
                 <ProjectGallery />
             </section>
+            <ClientProjects limit={3} />
             <Skills />
             {/* <SkillsSection/> */}
         </div>

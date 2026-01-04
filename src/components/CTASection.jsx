@@ -13,7 +13,7 @@ const CTASection = () => {
             I'm open to <span className="font-semibold">freelance</span>, <span className="font-semibold">part-time</span>, and <span className="font-semibold">full-time</span> opportunities. Let’s turn your ideas into beautiful, scalable, and powerful digital products.
           </p>
 
-          <a href="mailto:arjunlakshkar1234@gmail.com?subject=Let%27s%20Connect&body=Hi%20Arjun%2C%20I%27d%20like%20to%20get%20in%20touch%20with%20you.">
+          <a href="mailto:rajbhadurs809@gmail.com?subject=Let%27s%20Connect&body=Hi%20Arjun%2C%20I%27d%20like%20to%20get%20in%20touch%20with%20you.">
             <button className="mt-8 bg-black hover:bg-zinc-900 text-white font-medium py-3 px-8 rounded-full shadow-lg transition duration-300">
               Let’s Talk ↓
             </button>
@@ -24,11 +24,12 @@ const CTASection = () => {
 
         {/* Footer Note */}
         <div className="mt-12 text-sm text-gray-500">
-          © {new Date().getFullYear()} <span className="text-white font-semibold">Arjun Lakshakar</span>. All rights reserved.
+          © {new Date().getFullYear()} <span className="text-white font-semibold">Raj Bhadur singh</span>. All rights reserved.
         </div>
       </div>
     </section>
   );
 };
+
 
 export default CTASection;

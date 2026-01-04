@@ -11,7 +11,7 @@
 //         <iframe src="https://lottie.host/embed/8161e01a-b711-4730-897d-f76e4cc9ebd2/qhduI8wxk1.lottie"></iframe>
 
 
-//         <h1 className="text-3xl font-bold text-center mt-4">Hi, I’m Arjun 👋</h1>
+//         <h1 className="text-3xl font-bold text-center mt-4">Hi, I'm Raj bhadur singh 👋</h1>
 //         <p className="text-center text-gray-600">
 //           I build responsive and interactive websites using React & Tailwind.
 //         </p>

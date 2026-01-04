@@ -35,7 +35,7 @@ const LandingPage = () => {
           className="w-full lg:w-[60%] text-center lg:text-left space-y-6 px-2 sm:px-6"
         >
 
-          <h1 className="text-2xl font-medium  xs:text-4xl md:text-6xl font-[Outfit] leading-tight bg-gradient-to-b from-white via-[#a5a5a5] to-[#5c5c5c] bg-clip-text text-transparent flex flex-col gap-4">
+          <h1 className="text-2xl font-medium lg:text-3xl  xs:text-4xl md:text-6xl font-[Outfit] leading-tight bg-gradient-to-b from-white via-[#a5a5a5] to-[#5c5c5c] bg-clip-text text-transparent flex flex-col gap-4">
             <span>
               I am a&nbsp;
               <span className="inline-block">

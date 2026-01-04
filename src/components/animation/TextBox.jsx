@@ -53,7 +53,7 @@ const TextBox = () => {
                                 textAnchor="middle"
                                 alignmentBaseline="middle"
                             >
-                                Arjun Lakshkar
+                                Raj bhadur singh
                             </text>
                         </g>
                     </g>

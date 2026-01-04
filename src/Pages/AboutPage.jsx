@@ -3,6 +3,7 @@ import AboutMe from '../components/AboutMe'
 import Experience from '../components/Experience'
 import AboutOverview from '../components/AboutOverview'
 import Services from '../components/Services'
+import ClientProjects from '../components/ClientProjects'
 import { useLocation } from 'react-router-dom'
 
 const AboutPage = () => {
@@ -29,7 +30,10 @@ const AboutPage = () => {
             <AboutMe />
             <AboutOverview />
             <section id="experience">
-                <Experience />
+                <Experience showClientProjects={false} />
+            </section>
+            <section id="client-projects">
+                <ClientProjects />
             </section>
             <Services />
         </div>

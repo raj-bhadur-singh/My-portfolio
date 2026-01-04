@@ -51,10 +51,10 @@ const Navbar = () => {
               Projects
             </Link>
 
-            {/* Scroll to Experience Section on Home */}
+            {/* Scroll to Client Projects Section on About */}
             <Link
               to="/about"
-              state={{ scrollTo: "experience" }}
+              state={{ scrollTo: "client-projects" }}
               className="hover:text-lime-400 transition"
             >
               Experience
@@ -155,7 +155,7 @@ const Navbar = () => {
 
               <Link
                 to="/about"
-                state={{ scrollTo: "experience" }}
+                state={{ scrollTo: "client-projects" }}
                 onClick={closeDrawer}
                 className="hover:text-lime-400 transition text-lg py-2"
               >

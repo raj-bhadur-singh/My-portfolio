@@ -1,31 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Experience = ({ showClientProjects = true }) => {
+const ClientProjects = ({ limit = null }) => {
   const [selectedProject, setSelectedProject] = useState(null);
-  const experiences = [
-    {
-      range: "Oct 2023 – April 2024",
-      title: "Full Stack Developer Intern",
-    company: "Csdt It Solution",
-      details: [
-        "Gained hands-on experience with Node.js, Express.js, and MongoDB for backend development and databasemanagement.",
-        "Worked on various projects using modern coding methodologies and best practices.",
-        "Practiced debugging techniques using browser Developer Tools to identify and resolve issues efficiently during my internship.",
-        "Handled the database and created a responsive front-end using HTML, CSS and JavaScript React.Js. node js , mongodb ",
-      ],
-    },
-    {
-      range: "15 january 2025 – 18 July 2025",
-      title: "MERN Stack Developer Certification",
-      company: "Internshala Trainings",
-      link: "https://drive.google.com/file/d/1y1AHx4cpPHNZf6GvOtGfKoWIWu_NO3ix/view?usp=drive_link",
-      details: [
-        "Created real-world full-stack projects using MongoDB, Express, React, Node.js.",
-        "Covered authentication, REST APIs, file upload, and deployment.",
-        "Built hands-on projects like e-commerce platform & blog app.",
-      ],
-    },
-  ];
+  const navigate = useNavigate();
 
   const projects = [
     {
@@ -210,159 +188,90 @@ const Experience = ({ showClientProjects = true }) => {
     }
   ];
 
-  return (
-    <section className="bg-gradient-to-br from-black via-[#0d0d2b] to-[#1b0f2e] text-white py-20 px-4 md:px-20">
-      <h2 className="text-4xl sm:text-5xl font-semibold text-center md:text-left bg-gradient-to-b from-white via-[#a5a5a5] to-[#5c5c5c] bg-clip-text text-transparent">
-        Experience and education
-      </h2>
+  const displayedProjects = limit ? projects.slice(0, limit) : projects;
+  const hasMoreProjects = limit && projects.length > limit;
 
+  return (
+    <div className="bg-gradient-to-br from-black via-[#0d0d2b] to-[#1b0f2e] text-white py-20 px-4 md:px-20">
+      <h2 className="text-4xl sm:text-5xl font-semibold text-center md:text-left bg-gradient-to-b from-white via-[#a5a5a5] to-[#5c5c5c] bg-clip-text text-transparent">
+        Client Projects
+      </h2>
       <p className="text-gray-400 text-sm sm:text-base max-w-2xl mt-2 mb-12 text-center md:text-left">
-        Real-world internship and project training that shaped my practical
-        skills in full-stack development.
+        Professional projects delivered for real clients across various industries
       </p>
 
-      <div className="flex flex-col-reverse md:flex-row gap-16 px-2 sm:px-4 md:px-10">
-        {/* Timeline Section */}
-        <div className="border-l-2 border-gray-700 space-y-16 lg:w-2/3 pl-6 sm:pl-10">
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="relative animate-fade-in-up transition-all duration-500 ease-in-out"
-              style={{
-                animationDelay: `${index * 200}ms`,
-                animationFillMode: "both",
-              }}
-            >
-              {/* Timeline Dot */}
-              <div className="absolute sm:-left-12 -left-8 w-4 h-4 bg-lime-400 border-4 border-[#0d0d2b] rounded-full shadow-lg shadow-lime-400/30" />
-
-              {/* Date Badge */}
-              <div className="absolute -top-2 -left-[15px] bg-lime-400 text-black text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap">
-                {exp.range}
-              </div>
-
-              {/* Job Content */}
-              <div className="flex flex-col pt-8">
-                <h3 className="text-xl sm:text-2xl font-semibold">
-                  {exp.title}
-                </h3>
-                <p className="text-blue-400 text-base sm:text-lg mb-3 flex items-center gap-2">
-                  <span>@</span>
-                  {exp.link ? (
-                    <a
-                      href={exp.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline underline-offset-2"
-                    >
-                      {exp.company}
-                    </a>
-                  ) : (
-                    <span>{exp.company}</span>
-                  )}
-                </p>
-                <ul className="list-disc text-gray-300 space-y-2 pl-5 text-sm sm:text-base">
-                  {exp.details.map((point, idx) => (
-                    <li
-                      key={idx}
-                      className="hover:text-white transition-all duration-200"
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {displayedProjects.map((project, index) => (
+          <div
+            key={index}
+            onClick={() => setSelectedProject(project)}
+            className="bg-gradient-to-br from-[#1a1a3e] to-[#0f0f23] rounded-xl p-6 border border-gray-800 hover:border-lime-400 transition-all duration-300 hover:shadow-xl hover:shadow-lime-400/10 group cursor-pointer"
+          >
+            {/* Status Badge */}
+            <div className="flex justify-between items-start mb-4">
+              <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                project.status === 'Live'
+                  ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                  : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
+              }`}>
+                {project.status}
+              </span>
+              <span className="text-xs text-gray-500 italic">{project.type}</span>
             </div>
-          ))}
-        </div>
 
-        {/* Lottie Animation */}
-        <div className="w-full lg:w-1/3 flex-col items-center md:items-start lg:flex hidden">
-          <iframe
-            src="https://lottie.host/embed/207d9b77-6ffd-4c77-8a1f-71a4beddfa1b/UtkxYO1xvQ.lottie"
-            // src="https://lottie.host/embed/8161e01a-b711-4730-897d-f76e4cc9ebd2/qhduI8wxk1.lottie"
-            title="experience-lottie"
-            className="w-full h-[300px] sm:h-[400px] md:h-[500px] max-w-[450px] "
-            style={{ border: "none" }}
-          ></iframe>
-          {/* <p className="text-lime-400 text-sm mt-4 text-center md:text-left font-semibold">
-                        Visualizing My Journey →
-                    </p> */}
-        </div>
-      </div>
+            {/* Project Title */}
+            <h3 className="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">
+              {project.title}
+            </h3>
 
-      {/* Client Projects Section */}
-      {showClientProjects && (
-      <div className="mt-32">
-        <h2 className="text-4xl sm:text-5xl font-semibold text-center md:text-left bg-gradient-to-b from-white via-[#a5a5a5] to-[#5c5c5c] bg-clip-text text-transparent">
-          Client Projects
-        </h2>
-        <p className="text-gray-400 text-sm sm:text-base max-w-2xl mt-2 mb-12 text-center md:text-left">
-          Professional projects delivered for real clients across various industries
-        </p>
+            {/* Client */}
+            <p className="text-sm text-blue-400 mb-3">
+              Client: {project.client}
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              onClick={() => setSelectedProject(project)}
-              className="bg-gradient-to-br from-[#1a1a3e] to-[#0f0f23] rounded-xl p-6 border border-gray-800 hover:border-lime-400 transition-all duration-300 hover:shadow-xl hover:shadow-lime-400/10 group cursor-pointer"
-            >
-              {/* Status Badge */}
-              <div className="flex justify-between items-start mb-4">
-                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                  project.status === 'Live'
-                    ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                    : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
-                }`}>
-                  {project.status}
+            {/* Description */}
+            <p className="text-gray-300 text-sm mb-4 line-clamp-3">
+              {project.description}
+            </p>
+
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tech.map((tech, idx) => (
+                <span
+                  key={idx}
+                  className="px-2 py-1 bg-gray-800/50 text-cyan-400 text-xs rounded border border-cyan-500/30"
+                >
+                  {tech}
                 </span>
-                <span className="text-xs text-gray-500 italic">{project.type}</span>
-              </div>
-
-              {/* Project Title */}
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-lime-400 transition-colors">
-                {project.title}
-              </h3>
-
-              {/* Client */}
-              <p className="text-sm text-blue-400 mb-3">
-                Client: {project.client}
-              </p>
-
-              {/* Description */}
-              <p className="text-gray-300 text-sm mb-4 line-clamp-3">
-                {project.description}
-              </p>
-
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((tech, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 py-1 bg-gray-800/50 text-cyan-400 text-xs rounded border border-cyan-500/30"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              {/* Achievements */}
-              <div className="border-t border-gray-700 pt-4">
-                <p className="text-xs text-gray-400 mb-2 font-semibold">Key Achievements:</p>
-                <ul className="space-y-1">
-                  {project.achievements.map((achievement, idx) => (
-                    <li key={idx} className="text-xs text-gray-400 flex items-start">
-                      <span className="text-lime-400 mr-2">✓</span>
-                      {achievement}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
+
+            {/* Achievements */}
+            <div className="border-t border-gray-700 pt-4">
+              <p className="text-xs text-gray-400 mb-2 font-semibold">Key Achievements:</p>
+              <ul className="space-y-1">
+                {project.achievements.map((achievement, idx) => (
+                  <li key={idx} className="text-xs text-gray-400 flex items-start">
+                    <span className="text-lime-400 mr-2">✓</span>
+                    {achievement}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
+
+      {/* View All Projects Button */}
+      {hasMoreProjects && (
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={() => navigate('/about', { state: { scrollTo: 'client-projects' } })}
+            className="bg-gradient-to-r from-lime-400 to-green-400 text-black font-semibold px-8 py-4 rounded-lg hover:shadow-xl hover:shadow-lime-400/50 transition-all duration-300 transform hover:scale-105"
+          >
+            View All Projects ({projects.length})
+          </button>
+        </div>
       )}
 
       {/* Project Detail Drawer - Slides from Right */}
@@ -514,8 +423,8 @@ const Experience = ({ showClientProjects = true }) => {
           </div>
         </>
       )}
-    </section>
+    </div>
   );
 };
 
-export default Experience;
+export default ClientProjects;

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 // import './Loader.css'; // Optional custom styles if needed
 
 const Loader = ({ onFinish }) => {
-  const name = "Arjun   Lakshakar";
+  const name = "Raj bhadur singh";
 
   useEffect(() => {
     const timer = setTimeout(() => {

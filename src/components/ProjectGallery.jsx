@@ -14,48 +14,28 @@ const projects = [
       'A MERN-based video-sharing platform featuring uploads, channels, likes, comments, and category-based filters. Secure JWT-auth APIs and modern responsive UI with Tailwind CSS. ' +
       'Includes channel dashboard, user authentication, and related video section. Mimics YouTube UI with modal-based uploads and toast notifications.',
   },
-  {
-    id: 2,
-    title: 'TechVistra',
-    category: 'Corporate Site',
-    image: '/images/techvistra.png',
-    previewLink: "https://www.techvistra.com",
-    githubLink: 'https://github.com/ArjunLakshakar',
-    description:
-      'Official corporate site built with React and Tailwind. Fully responsive, SEO-optimized, and supports dynamic content through reusable components and API integrations. ' +
-      'Collaborated with designers to maintain brand consistency. Developed secure APIs and ensured accessibility across devices.',
-  },
+  // {
+  //   id: 2,
+  //   title: 'TechVistra',
+  //   category: 'Corporate Site',
+  //   image: '/images/techvistra.png',
+  //   previewLink: "https://www.techvistra.com",
+  //   githubLink: 'https://github.com/ArjunLakshakar',
+  //   description:
+  //     'Official corporate site built with React and Tailwind. Fully responsive, SEO-optimized, and supports dynamic content through reusable components and API integrations. ' +
+  //     'Collaborated with designers to maintain brand consistency. Developed secure APIs and ensured accessibility across devices.',
+  // },
   {
     id: 3,
     title: 'ShoppyGloble',
     category: 'E-Commerce',
     image: '/images/shoppy-globle.png',
-    previewLink: "https://shoppy-globe-full-stack.vercel.app",
-    githubLink: 'https://github.com/ArjunLakshakar/ShoppyGlobe-FullStack',
+    previewLink: "https://shoppy-ecommerce-seven.vercel.app/",
+    githubLink: 'https://github.com/raj-bhadur-singh/shoppyEcommerce',
     description:
-      'Full-stack e-commerce platform with React frontend and Node.js backend. Features include product listings, cart management, user authentication, and order processing. ',
+      'E-commerce platform with React frontend and  Features include product listings, cart management, user authentication, and order processing. ',
   },
-  {
-    id: 4,
-    title: 'JobPortal',
-    category: 'Job Platform',
-    image: '/images/job-portal.png',
-    previewLink: "https://jobportal-frontend-c9ck.vercel.app/",
-    githubLink: 'https://github.com/ArjunLakshakar/jobportal-frontend',
-    description:
-      "A full-stack job portal built with React and Java Spring.Role-based auth, recruiter tools, job listing filters, and admin panel. Built with scalable architecture and seamless user interactions." 
-      // "Responsive design with Tailwind CSS, secure JWT authentication, and RESTful APIs. Includes admin dashboard for managing job postings and user applications.",
-  },
-  {
-    id: 5,
-    title: 'Online Library',
-    category: 'Book Explorer',
-    image: '/images/online-library.png',
-    previewLink: "https://online-library-system-red.vercel.app",
-    githubLink: 'https://github.com/ArjunLakshakar/Online-Library-System',
-    description:
-      'React app using Open Library API. Features: category filters, trending books, clean responsive UI with Tailwind. Added loading states, dynamic search, and error handling.',
-  },
+  
 ];
 
 const ProjectGallery = () => {
@@ -81,7 +61,7 @@ const ProjectGallery = () => {
             className="text-4xl sm:text-5xl font-bold text-gray-100 mb-3"
             style={{ fontFamily: 'Caveat' }}
           >
-            Some Recent Work
+          My project
           </h2>
           <p className="text-gray-400 max-w-3xl text-sm xs:text-base">
             Projects that reflect my journey as a full-stack developer — blending clean code, responsive design, and real-world problem solving.

@@ -3,6 +3,7 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import Navbar from './components/Navbar';
 import CTASection from './components/CTASection';
+import FloatingContact from './components/FloatingContact';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Loader from './components/Loader';
 import { useEffect, useState } from 'react';
@@ -32,6 +33,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
           </Routes>
           <CTASection />
+          <FloatingContact />
         </BrowserRouter>
       )}
     </>
