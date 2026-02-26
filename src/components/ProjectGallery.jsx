@@ -8,12 +8,13 @@ const projects = [
     title: 'YouTube Clone',
     category: 'Full Stack',
     image: '/images/youtube-clone.png',
-    previewLink: "https://you-tube-clone-eight-inky.vercel.app/",
-    githubLink: 'https://github.com/ArjunLakshakar/YouTube-Clone',
+    previewLink: "https://investment-system.vercel.app/login",
+    githubLink: 'https://github.com/raj-bhadur-singh/investmentSystem',
     description:
-      'A MERN-based video-sharing platform featuring uploads, channels, likes, comments, and category-based filters. Secure JWT-auth APIs and modern responsive UI with Tailwind CSS. ' +
-      'Includes channel dashboard, user authentication, and related video section. Mimics YouTube UI with modal-based uploads and toast notifications.',
-  },
+  'A MERN-based investment platform with multiple ROI plans, automated daily profit distribution, and referral bonus system. ' +
+  'Users can select plans (Basic to Platinum), track active investments, and view earnings in a real-time dashboard. ' +
+  'Node-cron based scheduler processes daily returns at 12:00 AM. Includes secure authentication, wallet tracking, ' +
+  'investment history, and responsive UI built with Tailwind CSS.'},
   // {
   //   id: 2,
   //   title: 'TechVistra',

@@ -7,13 +7,13 @@ const ClientProjects = ({ limit = null }) => {
 
   const projects = [
     {
-      title: "E-Commerce Fashion Platform",
-      client: "Fashion Retail Brand",
+      title: "MLM E-Commerce ",
+      client: "Multi product Store",
       status: "Live",
       type: "Full Stack Development",
       tech: ["React.js", "Node.js", "MongoDB", "Express.js"],
       description: "Complete e-commerce solution with user authentication, product management, cart system, and payment integration.",
-      liveLink: "https://example-fashion-store.com", // Replace with actual link
+      liveLink: "https://www.maashyamaassociates.com/", // Replace with actual link
       achievements: [
         "Handles 5,000+ daily active users",
         "Reduced page load time by 45%",
@@ -23,169 +23,108 @@ const ClientProjects = ({ limit = null }) => {
         "User Authentication & Authorization with JWT",
         "Product Catalog with Advanced Filtering",
         "Shopping Cart & Wishlist Management",
-        "Secure Payment Gateway Integration (Razorpay/Stripe)",
+        "Secure Payment Gateway Integration (Razorpay)",
         "Order Tracking & Management System",
         "Admin Dashboard for Product Management",
         "Responsive Design for Mobile & Desktop",
         "Email Notifications for Orders"
       ],
       techStack: {
-        frontend: ["React.js", "Redux Toolkit", "Tailwind CSS", "Axios"],
+        frontend: ["React.js", "Tailwind CSS", "Axios"],
         backend: ["Node.js", "Express.js", "JWT", "Bcrypt"],
         database: ["MongoDB", "Mongoose"],
         others: ["Razorpay API", "Nodemailer", "Cloudinary"]
       }
     },
     {
-      title: "Hospital Management System",
-      client: "Healthcare Provider",
-      status: "In Development",
-      type: "Enterprise Application",
-      tech: ["React.js", "Spring Boot", "MySQL", "REST API"],
-      description: "Comprehensive system for patient management, appointment scheduling, medical records, and billing.",
+      title: "Educational job portal",
+      client: "Course Job  provider",
+      status: "Live",
+      type: "Full stack Development",
+      tech: ["React.js", "node", "Express.js", "REST API","Mongodb"],
+      description: "My website is an online platform where users can purchase paid courses to enhance their skills. Multiple employers can post job openings, and job seekers can create profiles and apply for relevant positions. The platform connects learning and hiring in one place, helping users grow their careers and find better opportunities.",
       liveLink: "", // Not live yet
       achievements: [
-        "Streamlined appointment process",
-        "Digital patient record management",
+  
+        "Digital Student dashboard",
         "Role-based access control"
       ],
       detailedFeatures: [
-        "Patient Registration & Profile Management",
-        "Doctor Appointment Scheduling System",
-        "Electronic Medical Records (EMR)",
-        "Prescription Management",
-        "Billing & Invoice Generation",
-        "Lab Test Results Management",
-        "Role-Based Access (Admin, Doctor, Staff, Patient)",
-        "Medical History Tracking"
-      ],
+  "Paid Courses with Secure Enrollment",
+  "Course Completion Certificate Generation",
+  "Student Profile & Progress Tracking",
+  "Employer Free Job Posting (First Month)",
+  "Paid Job Posting After Free Period",
+  "Job Seeker Profile & Resume Upload",
+  "Advanced Job Search & Apply System",
+  "Role-Based Access (Admin, Employer, Job Seeker)",
+  "Application Tracking Dashboard",
+  "Integrated Learning & Hiring Platform"
+],
       techStack: {
         frontend: ["React.js", "Material-UI", "React Router", "Axios"],
-        backend: ["Spring Boot", "Spring Security", "REST API", "JPA"],
-        database: ["MySQL", "Hibernate"],
-        others: ["PDF Generation", "Email Service", "JWT Authentication"]
+        backend: ["Node.js", "REST API", "SiExpress.js"],
+        database: ["Mongo db", ],
+        others: ["MS91", "Email Service", "JWT Authentication"]
       }
     },
-    {
-      title: "Real Estate Portal",
-      client: "Property Dealer",
-      status: "Live",
-      type: "Web Application",
-      tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-      description: "Property listing platform with advanced search filters, virtual tours, and lead management system.",
-      liveLink: "https://example-realestate.com", // Replace with actual link
-      achievements: [
-        "300+ property listings managed",
-        "Advanced search & filter system",
-        "Responsive design for all devices"
-      ],
-      detailedFeatures: [
-        "Property Listing with Image Gallery",
-        "Advanced Search & Filter (Location, Price, Type)",
-        "Google Maps Integration",
-        "Virtual Tour Support",
-        "Lead Capture & Management System",
-        "Featured Properties Section",
-        "Contact Form with Email Integration",
-        "Mobile-Responsive Design"
-      ],
-      techStack: {
-        frontend: ["React.js", "Tailwind CSS", "React Hook Form", "Swiper.js"],
-        backend: ["Node.js", "Express.js", "Multer"],
-        database: ["MongoDB", "Mongoose"],
-        others: ["Google Maps API", "Nodemailer", "Cloudinary"]
-      }
-    },
-    {
-      title: "Restaurant Management App",
-      client: "Restaurant Chain",
-      status: "Live",
-      type: "Full Stack Development",
-      tech: ["React.js", "Express.js", "PostgreSQL", "Socket.io"],
-      description: "Complete restaurant management with order tracking, inventory management, and real-time kitchen updates.",
-      liveLink: "https://example-restaurant.com", // Replace with actual link
-      achievements: [
-        "Real-time order notifications",
-        "Inventory tracking system",
-        "Customer feedback module"
-      ],
-      detailedFeatures: [
-        "Online Menu with Categories",
-        "Real-Time Order Management",
-        "Kitchen Display System (KDS)",
-        "Table Reservation System",
-        "Inventory Management",
-        "Staff Management Module",
-        "Customer Feedback & Reviews",
-        "Sales Analytics Dashboard"
-      ],
-      techStack: {
-        frontend: ["React.js", "Socket.io Client", "Bootstrap", "Chart.js"],
-        backend: ["Node.js", "Express.js", "Socket.io", "Sequelize"],
-        database: ["PostgreSQL"],
-        others: ["Real-time Notifications", "PDF Invoice", "SMS Integration"]
-      }
-    },
-    {
-      title: "Educational Platform",
-      client: "Coaching Institute",
-      status: "In Development",
-      type: "Learning Management System",
-      tech: ["React.js", "Node.js", "MongoDB", "AWS S3"],
-      description: "Online learning platform with video courses, quizzes, progress tracking, and student-teacher interaction.",
-      liveLink: "", // Not live yet
-      achievements: [
-        "Video streaming integration",
-        "Interactive quiz system",
-        "Student progress analytics"
-      ],
-      detailedFeatures: [
-        "Course Management System",
-        "Video Streaming with AWS S3",
-        "Interactive Quizzes & Assignments",
-        "Student Progress Tracking",
-        "Live Class Integration (Zoom/Google Meet)",
-        "Discussion Forum",
-        "Certificate Generation",
-        "Payment Integration for Courses"
-      ],
-      techStack: {
-        frontend: ["React.js", "Redux", "Video.js", "Tailwind CSS"],
-        backend: ["Node.js", "Express.js", "Passport.js"],
-        database: ["MongoDB", "Mongoose"],
-        others: ["AWS S3", "Razorpay", "Zoom API", "PDF Generation"]
-      }
-    },
-    {
-      title: "Gym & Fitness Tracker",
-      client: "Fitness Center",
-      status: "Live",
-      type: "Mobile-First Web App",
-      tech: ["React.js", "Firebase", "Chart.js", "PWA"],
-      description: "Fitness tracking app with workout plans, diet management, membership handling, and progress visualization.",
-      liveLink: "https://example-fitness.com", // Replace with actual link
-      achievements: [
-        "PWA for mobile experience",
-        "Visual progress tracking",
-        "Automated membership alerts"
-      ],
-      detailedFeatures: [
-        "Workout Plan Management",
-        "Diet & Nutrition Tracking",
-        "Progress Visualization with Charts",
-        "Membership Management System",
-        "Attendance Tracking",
-        "Trainer Assignment",
-        "Payment & Invoice System",
-        "Push Notifications for Reminders"
-      ],
-      techStack: {
-        frontend: ["React.js", "Chart.js", "PWA", "Material-UI"],
-        backend: ["Firebase Functions", "Firebase Auth"],
-        database: ["Firebase Firestore"],
-        others: ["Firebase Cloud Messaging", "Stripe", "Service Workers"]
-      }
-    }
+   
+   {
+  title: "Astrology Consultation Platform",
+  client: "Astrology Service Provider",
+  status: "Live",
+  type: "Web Application",
+  tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+  description:
+    "A complete astrology platform where multiple astrologers can register, go live, chat with users, generate Panchang, Kundli, and Matrimonial reports, and accept secure payments online.",
+  liveLink: "https://example-astrology.com", // Replace with actual link
+
+  achievements: [
+    "Multi-astrologer onboarding system",
+    "Real-time live streaming & chat feature",
+    "AI-powered astrologer assistant integration",
+    "Automated Panchang & Kundli generation"
+  ],
+
+  detailedFeatures: [
+    "Multi-Astrologer Registration & Profile Management",
+    "Live Streaming Integration (ZegoCloud)",
+    "Real-Time Chat Between User & Astrologer",
+    "Panchang Generation (VedicAstroAPI)",
+    "Kundli & Horoscope Report Generation",
+    "Matrimonial Matchmaking Reports",
+    "AI Astrologer Chat (ChatGPT Integration)",
+    "Secure Online Payments (Razorpay)",
+    "User Wallet & Session Booking System",
+    "Role-Based Access (Admin, Astrologer, User)"
+  ],
+
+  techStack: {
+    frontend: [
+      "React.js",
+      "Tailwind CSS",
+      "Axios",
+      "ZegoCloud Web SDK"
+    ],
+    backend: [
+      "Node.js",
+      "Express.js",
+      "JWT Authentication"
+    ],
+    database: [
+      "MongoDB",
+      "Mongoose"
+    ],
+    others: [
+      "VedicAstroAPI",
+      "Razorpay Payment Gateway",
+      "ChatGPT API",
+      "Cloudinary"
+    ]
+  }
+},
+    
+   
   ];
 
   const displayedProjects = limit ? projects.slice(0, limit) : projects;
