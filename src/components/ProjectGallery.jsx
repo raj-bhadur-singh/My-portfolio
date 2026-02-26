@@ -14,7 +14,7 @@ const projects = [
   'A MERN-based investment platform with multiple ROI plans, automated daily profit distribution, and referral bonus system. ' +
   'Users can select plans (Basic to Platinum), track active investments, and view earnings in a real-time dashboard. ' +
   'Node-cron based scheduler processes daily returns at 12:00 AM. Includes secure authentication, wallet tracking, ' +
-  'investment history, and responsive UI built with Tailwind CSS.'},
+  'investment history, and responsive UI built with Tailwind CSS..'},
   // {
   //   id: 2,
   //   title: 'TechVistra',
