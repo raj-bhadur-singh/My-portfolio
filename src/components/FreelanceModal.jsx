@@ -118,19 +118,25 @@ ${formData.projectDetails}
               />
             </div>
 
-            {/* Budget Input */}
+            {/* Budget Dropdown */}
             <div>
               <label className="block text-lime-400 text-sm font-semibold mb-2">
                 Project Budget (Optional)
               </label>
-              <input
-                type="text"
+              <select
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                placeholder="e.g., ₹50,000 - ₹1,00,000"
-                className="w-full bg-gray-900/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-lime-400 transition-colors"
-              />
+                className="w-full bg-gray-900/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-lime-400 transition-colors appearance-none cursor-pointer"
+              >
+                <option value="" className="bg-gray-900 text-gray-400">-- Select Budget Range --</option>
+                <option value="₹3,000 - ₹5,000" className="bg-gray-900">₹3,000 - ₹5,000</option>
+                <option value="₹5,000 - ₹10,000" className="bg-gray-900">₹5,000 - ₹10,000</option>
+                <option value="₹10,000 - ₹20,000" className="bg-gray-900">₹10,000 - ₹20,000</option>
+                <option value="₹20,000 - ₹30,000" className="bg-gray-900">₹20,000 - ₹30,000</option>
+                <option value="₹30,000 - ₹50,000" className="bg-gray-900">₹30,000 - ₹50,000</option>
+                <option value="₹50,000 - ₹1,00,000" className="bg-gray-900">₹50,000 - ₹1,00,000</option>
+              </select>
             </div>
 
             {/* Project Details */}

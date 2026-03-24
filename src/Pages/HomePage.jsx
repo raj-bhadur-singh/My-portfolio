@@ -5,12 +5,18 @@ import Skills from '../components/Skills'
 import { useLocation } from 'react-router-dom'
 import SkillsSection from '../components/SkillsSection'
 import ClientProjects from '../components/ClientProjects'
+import ClientShowcaseBanner from '../components/ClientShowcaseBanner'
 
 const HomePage = () => {
     const location = useLocation();
 
     useEffect(() => {
-        window.scroll(0, 0);
+        const el = document.getElementById('client-projects');
+        if (el) {
+            setTimeout(() => {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }, 300);
+        }
     }, []);
 
     useEffect(() => {
@@ -28,12 +34,17 @@ const HomePage = () => {
     return (
         <div>
             <LandingPage />
+            <ClientShowcaseBanner />
+            
             <section id="projects">
                 <ProjectGallery />
             </section>
-            <ClientProjects limit={3} />
+
             <Skills />
-            {/* <SkillsSection/> */}
+            <section id="client-projects">
+                <ClientProjects limit={4} />
+            </section>
+            <SkillsSection/>
         </div>
     )
 }
