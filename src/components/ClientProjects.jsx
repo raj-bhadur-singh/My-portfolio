@@ -43,7 +43,7 @@ const ClientProjects = ({ limit = null }) => {
       type: "Full stack Development",
       tech: ["React.js", "node", "Express.js", "REST API","Mongodb"],
       description: "My website is an online platform where users can purchase paid courses to enhance their skills. Multiple employers can post job openings, and job seekers can create profiles and apply for relevant positions. The platform connects learning and hiring in one place, helping users grow their careers and find better opportunities.",
-      liveLink: "", // Not live yet
+      liveLink: "https://aivonexskills.com/", // Not live yet
       achievements: [
   
         "Digital Student dashboard",
@@ -77,7 +77,7 @@ const ClientProjects = ({ limit = null }) => {
   tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
   description:
     "A complete astrology platform where multiple astrologers can register, go live, chat with users, generate Panchang, Kundli, and Matrimonial reports, and accept secure payments online.",
-  liveLink: "https://example-astrology.com", // Replace with actual link
+  liveLink: "https://astrojaipur.com/", // Replace with actual link
 
   achievements: [
     "Multi-astrologer onboarding system",

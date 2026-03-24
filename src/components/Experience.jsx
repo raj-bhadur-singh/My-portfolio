@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdLocationOn } from "react-icons/md";
 
 const Experience = ({ showClientProjects = true }) => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -23,6 +24,19 @@ const Experience = ({ showClientProjects = true }) => {
         "Created real-world full-stack projects using MongoDB, Express, React, Node.js.",
         "Covered authentication, REST APIs, file upload, and deployment.",
         "Built hands-on projects like e-commerce platform & blog app.",
+      ],
+    },
+    {
+      range: "Nov 2025 – Present",
+      title: "Freelance MERN Stack Developer",
+      company: "nextdev labs ",
+      location: "Pune, Maharashtra",
+      details: [
+        "Collaborated with NextDev Lab, a growing startup, to design and develop full-stack web applications for their clients.",
+        "Built scalable REST APIs and dynamic React.js frontends for e-commerce, dashboard, and SaaS projects.",
+        "Worked directly with founders and clients to gather requirements, deliver MVPs, and iterate based on feedback.",
+        "Managed project timelines independently while maintaining code quality and meeting deadlines.",
+        "Technologies used: React.js, Node.js, Express.js, MongoDB, Tailwind CSS, JWT, REST APIs.",
       ],
     },
   ];
@@ -246,21 +260,29 @@ const Experience = ({ showClientProjects = true }) => {
                 <h3 className="text-xl sm:text-2xl font-semibold">
                   {exp.title}
                 </h3>
-                <p className="text-blue-400 text-base sm:text-lg mb-3 flex items-center gap-2">
-                  <span>@</span>
-                  {exp.link ? (
-                    <a
-                      href={exp.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline underline-offset-2"
-                    >
-                      {exp.company}
-                    </a>
-                  ) : (
-                    <span>{exp.company}</span>
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <p className="text-blue-400 text-base sm:text-lg flex items-center gap-2">
+                    <span>@</span>
+                    {exp.link ? (
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline underline-offset-2"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      <span>{exp.company}</span>
+                    )}
+                  </p>
+                  {exp.location && (
+                    <span className="text-gray-400 text-sm flex items-center gap-1">
+                      <MdLocationOn className="text-lime-400 text-base" />
+                      {exp.location}
+                    </span>
                   )}
-                </p>
+                </div>
                 <ul className="list-disc text-gray-300 space-y-2 pl-5 text-sm sm:text-base">
                   {exp.details.map((point, idx) => (
                     <li
