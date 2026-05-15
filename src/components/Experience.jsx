@@ -29,10 +29,10 @@ const Experience = ({ showClientProjects = true }) => {
     {
       range: "Nov 2025 – Present",
       title: "Freelance MERN Stack Developer",
-      company: "nextdev labs ",
+      // company: "nextdev labs ",
       location: "Pune, Maharashtra",
       details: [
-        "Collaborated with NextDev Lab, a growing startup, to design and develop full-stack web applications for their clients.",
+        "Collaborated with  a growing startup, to design and develop full-stack web applications for their clients.",
         "Built scalable REST APIs and dynamic React.js frontends for e-commerce, dashboard, and SaaS projects.",
         "Worked directly with founders and clients to gather requirements, deliver MVPs, and iterate based on feedback.",
         "Managed project timelines independently while maintaining code quality and meeting deadlines.",
