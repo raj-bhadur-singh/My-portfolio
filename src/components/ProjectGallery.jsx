@@ -5,7 +5,7 @@ import Card from './animation/CardTemp';
 const projects = [
   {
     id: 1,
-    title: 'YouTube Clone',
+    title: 'investment platform with multiple ROI plans',
     category: 'Full Stack',
     image: '/images/youtube-clone.png',
     previewLink: "https://investment-system.vercel.app/login",
